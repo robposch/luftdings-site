@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — LuftDings</title>
+  <meta name="description" content="LuftDings support: how to get your Airthings API key, set up widgets, troubleshooting, and contact.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="../"><span class="dot"></span> LuftDings</a>
+      <nav class="site">
+        <a href="../privacy/">Privacy</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Support</h1>
+    <p class="lede">Need a hand? Email <a href="mailto:support@poschenrieder.io">support@poschenrieder.io</a> and I’ll get back to you.</p>
+
+    <div class="note">
+      <strong>No Airthings account?</strong> You can still try everything. On the setup screen, tap <strong>“Try a demo”</strong> to explore the app and widgets with realistic sample data.
+    </div>
+
+    <h2>Getting your Airthings API key</h2>
+    <p>LuftDings uses your own free Airthings API key to read your data (Bring Your Own API Key). Every Airthings account includes one at no extra cost. To create it:</p>
+    <ol>
+      <li>Sign in to your Airthings account at <a href="https://dashboard.airthings.com" rel="noopener" target="_blank">dashboard.airthings.com</a>.</li>
+      <li>Open the <strong>Integrations / API</strong> section and create a new API client.</li>
+      <li>Choose the <strong>client-credentials</strong> flow (machine-to-machine).</li>
+      <li>Copy the <strong>Client ID</strong> and <strong>Client Secret</strong> (use “Display secret” to reveal it).</li>
+      <li>In LuftDings, paste both values on the setup screen and tap connect.</li>
+    </ol>
+    <p>Your credentials are stored only in the iOS Keychain on your device and are sent directly to Airthings — never to us. See the <a href="../privacy/">Privacy Policy</a>.</p>
+
+    <h2>Adding a widget</h2>
+    <ol>
+      <li>Touch and hold an empty area of your Home Screen until the apps jiggle.</li>
+      <li>Tap the <strong>+</strong> in the top corner, search for <strong>LuftDings</strong>.</li>
+      <li>Pick a size (small, medium, or large), then tap <strong>Add Widget</strong>.</li>
+      <li>Long-press the widget and choose <strong>Edit Widget</strong> to select which device and sensors it shows.</li>
+    </ol>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>Which Airthings devices are supported?</h3>
+    <p>Any device available through the Airthings Cloud API, including the WiFi-based View series. PM2.5 is shown on devices that report it, such as the View Plus.</p>
+
+    <h3>Why do I need an API key?</h3>
+    <p>Airthings’ official app has no iOS widgets and no public per-user login for third-party apps. LuftDings reads your data through your own API key instead, so your data stays under your control.</p>
+
+    <h3>How often do the widgets update?</h3>
+    <p>iOS decides when widgets refresh — typically every 15–60 minutes — so readings are not real-time. LuftDings always shows a “last updated” time, and it refreshes gently to stay within Airthings’ API rate limit (120 requests per hour).</p>
+
+    <h3>The widget isn’t updating.</h3>
+    <p>Open the LuftDings app once to fetch fresh data and refresh the widgets. Make sure the app has network access and that your API credentials are still valid in your Airthings account.</p>
+
+    <h3>I get an authentication error.</h3>
+    <p>Re-check your Client ID and Secret in the app, and confirm the API client still exists in your Airthings dashboard. Re-entering the credentials usually resolves it.</p>
+
+    <h3>Is my data private?</h3>
+    <p>Yes. LuftDings has no server and collects nothing. Everything runs on your device. Details are in the <a href="../privacy/">Privacy Policy</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Still stuck, or have a feature request? Email <a href="mailto:support@poschenrieder.io">support@poschenrieder.io</a>.</p>
+  </main>
+
+  <footer class="site">
+    <a href="../privacy/">Privacy Policy</a>
+    <a href="../support/">Support</a>
+    <span class="disclaimer">
+      LuftDings is an unofficial, independent application for Airthings air-quality sensors and is not affiliated with, endorsed by, or sponsored by Airthings AS.
+    </span>
+  </footer>
+</body>
+</html>

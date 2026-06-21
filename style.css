@@ -1,0 +1,72 @@
+:root {
+  --navy: #0f1a2b;
+  --navy-soft: #16243a;
+  --teal: #2bb6a8;
+  --teal-bright: #4fd1c5;
+  --ink: #1c2530;
+  --muted: #5b6b7d;
+  --line: #e4e9ef;
+  --bg: #f6f8fb;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--teal); }
+a:hover { color: var(--teal-bright); }
+
+header.site {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-soft) 100%);
+  color: #fff;
+  padding: 28px 20px;
+}
+
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; font-weight: 700; font-size: 20px; }
+.brand .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--teal-bright); box-shadow: 0 0 12px var(--teal-bright); }
+
+nav.site a { color: #cdd8e6; text-decoration: none; margin-left: 18px; font-size: 15px; }
+nav.site a:hover { color: #fff; }
+
+.wrap { max-width: 760px; margin: 0 auto; }
+
+main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+.hero { text-align: center; padding: 56px 20px 40px; }
+.hero h1 { font-size: 40px; line-height: 1.15; margin: 0 0 14px; letter-spacing: -0.5px; }
+.hero p.tag { font-size: 20px; color: var(--muted); margin: 0 auto 28px; max-width: 540px; }
+
+.pill { display: inline-block; background: rgba(79,209,197,.14); color: #1a8f84; border: 1px solid rgba(43,182,168,.35); padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; margin-bottom: 22px; }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin: 30px 0; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+.card h3 { margin: 0 0 8px; font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+h1, h2, h3 { color: var(--ink); }
+h2 { font-size: 24px; margin-top: 40px; }
+h3 { font-size: 18px; }
+
+.lede { font-size: 18px; color: var(--muted); }
+
+.note { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--teal); border-radius: 10px; padding: 16px 18px; margin: 24px 0; }
+.note strong { color: var(--ink); }
+
+ol li, ul li { margin: 6px 0; }
+
+footer.site { border-top: 1px solid var(--line); padding: 30px 20px; text-align: center; color: var(--muted); font-size: 14px; }
+footer.site a { color: var(--muted); margin: 0 10px; }
+footer.site .disclaimer { display: block; margin-top: 14px; font-size: 12.5px; max-width: 620px; margin-left: auto; margin-right: auto; }
+
+code { background: #eef2f7; padding: 2px 6px; border-radius: 5px; font-size: 90%; }

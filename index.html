@@ -4,8 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LuftDings — Airthings air quality on your Home Screen</title>
-  <meta name="description" content="LuftDings shows your Airthings air-quality readings — radon, CO₂, VOC, temperature, humidity, pressure, PM2.5 — in iOS Home Screen and Lock Screen widgets. Free, no in-app purchases. Unofficial, not affiliated with Airthings.">
+  <meta name="description" content="LuftDings puts your Airthings air-quality readings — radon, CO₂, VOC, temperature, humidity, pressure, PM2.5 — into iOS Home Screen and Lock Screen widgets. Free, no in-app purchases. Unofficial, not affiliated with Airthings.">
+
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LuftDings — Airthings air quality on your Home Screen">
+  <meta property="og:description" content="The iOS widgets the official Airthings app doesn't have. Radon, CO₂, VOC, temperature, humidity and PM2.5 at a glance.">
+  <meta property="og:image" content="assets/icon.png">
+  <meta property="og:url" content="https://luftdings.poschenrieder.io/">
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
   <header class="site">
@@ -19,36 +29,114 @@
   </header>
 
   <section class="hero">
-    <span class="pill">Free · No in-app purchases</span>
-    <h1>Your Airthings air quality,<br>on your Home Screen.</h1>
-    <p class="tag">LuftDings puts your Airthings sensor readings into iOS widgets — so you can see your air at a glance without opening an app.</p>
+    <div class="inner">
+      <span class="pill">Free · No in-app purchases</span>
+
+      <div class="widget" role="img" aria-label="LuftDings widget showing Bedroom air quality: Radon 120 Bq/m³, CO₂ 612 ppm, Temp 21.4 °C, Humidity 45 %.">
+        <div class="w-top">
+          <span class="w-room">Bedroom</span>
+          <span class="w-refresh">↻</span>
+        </div>
+        <div class="w-grid">
+          <div class="w-cell">
+            <div class="w-label"><span class="dot poor"></span> Radon</div>
+            <div class="w-val">120 Bq/m³</div>
+          </div>
+          <div class="w-cell">
+            <div class="w-label"><span class="dot fair"></span> CO₂</div>
+            <div class="w-val">612 ppm</div>
+          </div>
+          <div class="w-cell">
+            <div class="w-label"><span class="dot good"></span> Temp</div>
+            <div class="w-val">21.4 °C</div>
+          </div>
+          <div class="w-cell">
+            <div class="w-label"><span class="dot good"></span> Humidity</div>
+            <div class="w-val">45 %</div>
+          </div>
+        </div>
+        <div class="w-foot">Measured 12 min ago · Synced 3 min ago</div>
+      </div>
+
+      <h1>Your Airthings air quality,<br>on your Home Screen.</h1>
+      <p class="tag">See radon, CO₂, VOC, temperature, humidity and PM2.5 at a glance — the widgets the official Airthings app doesn't have.</p>
+
+      <div class="chips">
+        <span class="chip"><span class="dot poor"></span> Radon</span>
+        <span class="chip"><span class="dot fair"></span> CO₂</span>
+        <span class="chip"><span class="dot good"></span> VOC</span>
+        <span class="chip"><span class="dot good"></span> Temp</span>
+        <span class="chip"><span class="dot good"></span> Humidity</span>
+        <span class="chip"><span class="dot good"></span> PM2.5</span>
+        <span class="chip"><span class="dot good"></span> Pressure</span>
+      </div>
+
+      <p class="store-note"><strong>Coming to the App Store.</strong> Free, with no in-app purchases.</p>
+    </div>
   </section>
 
   <main>
+    <div class="shots">
+      <figure class="shot">
+        <div class="frame"><img src="assets/screens/01_widgets.png" alt="Small, medium and large LuftDings Home Screen widgets" loading="lazy"></div>
+        <figcaption class="cap">Home Screen widgets — small, medium &amp; large</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="frame"><img src="assets/screens/02_readings.png" alt="Air Quality screen listing all sensor readings with quality colors" loading="lazy"></div>
+        <figcaption class="cap">All your sensors at a glance</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="frame"><img src="assets/screens/03_devices.png" alt="Readings grouped by device across the account" loading="lazy"></div>
+        <figcaption class="cap">Every device on your account</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="frame"><img src="assets/screens/05_setup.png" alt="Guided setup screen for entering your Airthings API key" loading="lazy"></div>
+        <figcaption class="cap">Bring your own key — guided setup</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="frame"><img src="assets/screens/04_settings.png" alt="Settings screen with units, demo mode and about" loading="lazy"></div>
+        <figcaption class="cap">Units, demo mode &amp; more</figcaption>
+      </figure>
+    </div>
+
     <div class="features">
       <div class="card">
-        <h3>Every reading</h3>
-        <p>Radon, CO₂, VOC, temperature, humidity, pressure — and PM2.5 on supported devices like the View Plus.</p>
-      </div>
-      <div class="card">
+        <span class="ic good"></span>
         <h3>Widgets, finally</h3>
-        <p>Small, medium, and large Home Screen widgets showing the sensors that matter to you, with a clear “last updated” time.</p>
+        <p>Small, medium and large Home Screen widgets showing the sensors that matter to you — each with a clear “last updated” time.</p>
       </div>
       <div class="card">
+        <span class="ic fair"></span>
+        <h3>Every reading</h3>
+        <p>Radon, CO₂, VOC, temperature, humidity and air pressure — plus PM2.5 and PM1 on supported devices like the View Plus.</p>
+      </div>
+      <div class="card">
+        <span class="ic good"></span>
         <h3>Works with WiFi devices</h3>
-        <p>Reads your data through the Airthings Cloud API, so it works across all device types — including the WiFi View series.</p>
+        <p>Reads your data through the official Airthings Cloud API, so it works across all device types — including the WiFi View series.</p>
       </div>
       <div class="card">
+        <span class="ic good"></span>
         <h3>Private by design</h3>
-        <p>No account with us, no backend, no tracking. Your credentials stay in the iOS Keychain on your device.</p>
+        <p>No account with us, no backend, no tracking. Your credentials stay in your iPhone’s Keychain.</p>
       </div>
     </div>
 
+    <h2>Works with</h2>
+    <p>Current-value devices on your Airthings account — latest readings only (no history):</p>
+    <ul class="devices">
+      <li>View Plus</li>
+      <li>View Pollution</li>
+      <li>Wave Plus</li>
+      <li>Wave Radon</li>
+      <li>Wave Mini</li>
+    </ul>
+
     <h2>How it connects</h2>
-    <p>LuftDings reads your sensor data using <strong>your own Airthings API key</strong> (Bring Your Own API Key). Every Airthings account includes a free API key — you create it once in your Airthings dashboard and paste it into the app. The app then talks <strong>directly</strong> to the Airthings Cloud API from your device.</p>
+    <p>LuftDings is free and reads your sensor data using <strong>your own free Airthings API key</strong> (Bring Your Own API Key) — the same key that comes with every Airthings account. You create it once on the Airthings dashboard, the app walks you through it, and from then on it talks <strong>directly</strong> to the Airthings Cloud API from your iPhone. Your credentials stay in your device’s Keychain and never touch any server we run.</p>
 
     <div class="note">
-      <strong>An Airthings account and API key are required to show live data.</strong> Without them, you can still explore the whole app in demo mode with realistic sample data. LuftDings is an independent app and is <strong>not affiliated with, endorsed by, or sponsored by Airthings</strong>.
+      <strong>Try it first.</strong> No Airthings account yet? Tap “Try a demo” to explore the whole app with realistic sample data before connecting anything. LuftDings is an independent app and is <strong>not affiliated with, endorsed by, or sponsored by Airthings</strong>.
     </div>
 
     <h2>Get the app</h2>
